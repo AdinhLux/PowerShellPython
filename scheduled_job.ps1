@@ -7,6 +7,7 @@ $path = "C:\Users\adinh\PycharmProjects\scripts"
 $user = "Adinh\ADI"
 
 # Get encrypted password from the file
+Set-Location $path
 $cred = Get-SavedCredential -UserName $user -KeyPath "$path\keys"
 
 # A job trigger starts a scheduled job. The options : -Once -Weekly -Daily -AtLogOn -AtStartUp
